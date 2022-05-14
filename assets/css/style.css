@@ -21,6 +21,14 @@ a {
   color: inherit;
 }
 
+span.font-bold {
+  font-weight: bold;
+}
+
+span.font-italic {
+  font-style: italic;
+}
+
 /* ====== Navbar Styling */
 
 /* === Navbar Grid */
@@ -130,9 +138,75 @@ img {
 
 /* ====== Footer Styling */
 
+.footer-headline {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.socialMedia-list {
+  list-style-type: none;
+  font-weight: 500;
+}
+
+/* === Set Footer Grid Layout */
+.footer-grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+  gap: 4rem;
+  grid-template-areas:
+    "description contact newsletter socialMedia"
+    "moreInfos moreInfos moreInfos moreInfos";
+  margin-top: 2rem;
+}
+.description {
+  grid-area: description;
+}
+.contact {
+  grid-area: contact;
+}
+.newsletter {
+  grid-area: newsletter;
+}
+.socialMedia {
+  grid-area: socialMedia;
+}
+.moreInfos {
+  margin-top: 3rem;
+  grid-area: moreInfos;
+}
+
+/* === Set Footer Items Grid */
+.footer-grid-item {
+  display: grid;
+  grid-auto-columns: 1fr;
+  gap: 1rem;
+  grid-template-areas:
+    "headline"
+    "content"
+    "moreInfos";
+}
+.footer-headline {
+  grid-area: headline;
+}
+footer .content {
+  grid-area: content;
+  height: 5rem;
+  line-height: 1.5;
+}
+
+.contact .footer-link {
+  display: block;
+  font-weight: 500;
+}
+
+.moreInfos {
+  grid-area: moreInfos;
+  display: inline-block;
+  color: var(--clr-secondary-light);
+}
+
 /* ====== Display: none for styling */
 
-footer,
-.none {
+/* .none {
   display: none;
-}
+} */

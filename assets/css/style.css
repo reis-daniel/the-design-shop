@@ -217,16 +217,15 @@ footer .content {
 
 /* ====== Animation Effects */
 
-.animation-bg {
-  background-color: #f7f7f7;
-}
-
-/* === Hover over images */
 img {
   transition: all 0.8s;
 }
 img:hover {
   opacity: 0.1;
+}
+
+.main-item {
+  position: relative;
 }
 
 /* ====== Display: none for styling */

@@ -54,12 +54,14 @@ span.font-italic {
 }
 
 .navbar-list-item,
-footer a {
+footer a,
+.navbar-headline-link {
   transition: ease-in-out 0.35s;
 }
 
 .navbar-list-item:hover,
-footer a:hover {
+footer a:hover,
+.navbar-headline-link:hover {
   color: var(--clr-secondary-light);
 }
 
